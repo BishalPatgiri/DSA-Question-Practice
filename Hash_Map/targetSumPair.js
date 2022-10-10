@@ -12,3 +12,8 @@ for(let i=0;i<arr.length;i++){
     }
 }
 console.log(ans)
+
+//if same elemets are there in the array then we need to increase the frequency in the hash map
+//if frequency is greater than 1 then output has same array with that frequency 
+
+// this can be solve using the two pointer technique also with O(nlogn) time complexity
