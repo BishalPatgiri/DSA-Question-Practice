@@ -4,7 +4,6 @@ let arr=[1,5,2,4,6]
 let target=6
 
 //sort the array for two pinter
-
 arr.sort((a,b)=>a-b)
 
 //take left and right pointer

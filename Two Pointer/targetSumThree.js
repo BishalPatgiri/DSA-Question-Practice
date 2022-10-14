@@ -19,16 +19,18 @@ let out=[]
 
 //for tracking the third element
 for(let i=0;i<arr.length;i++){
+    let c=arr[i]
+    let current_target=target-c
     left=i+1
 // run a loop till left<right
 while(left<right){
-    sum=arr[left]+arr[right]+arr[i]
-    if(sum==target){
+    sum=arr[left]+arr[right]
+    if(sum==current_target){
         out.push([arr[i],arr[left],arr[right]])
         left++;
         right++;
     }
-    else if(sum>target){
+    else if(sum>current_target){
         right--
     }
     else{
