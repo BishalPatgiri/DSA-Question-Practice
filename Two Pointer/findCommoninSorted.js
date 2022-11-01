@@ -24,3 +24,4 @@ while(left<arr2.length&&right>=0){
 }
 
 console.log(count)
+
