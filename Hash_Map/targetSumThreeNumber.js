@@ -4,7 +4,7 @@
 // two pinter will be good.
 
 //input
-let arr=[1,2,1,5,8,4]
+let arr=[1,2,1,5,3,4]
 let target=6
 
 
@@ -14,18 +14,18 @@ for(let i=0;i<arr.length;i++){
     let temp=target-arr[i]
     let map=new Map()
     let count=0
-    for(let j=0;j<arr.length;j++){
-        let temp1=Math.abs(temp-arr[j])
+    for(let j=i;j<arr.length;j++){
+        let temp1=temp-arr[j]
         if(map.has(temp1)){
             count++
-            ans.push(temp1,arr[j],arr[i])
+            ans.push([arr[i],temp1,arr[j]])
             break
         }
         else{
             map.set(arr[j],1)
         }   
     }
-if(count!=0)
-    break
+// if(count!=0)
+//     break
 }
 console.log(ans)
